@@ -41,7 +41,7 @@ public class PetNpcAttacker extends NpcAttacker {
             if (bugged) {
                 API.keyboardClick(keybinds.getCharCode(ACTIVE_PET));
                 fixedTimes++;
-            } else if (hero.locationInfo.distance(target) > 800) {
+            } else if (hero.locationInfo.distance(target) > 760) {
                 API.keyboardClick(keybinds.getCharCode(ATTACK_ROCKET));
                 laserTime = System.currentTimeMillis() + 5000;
             }
